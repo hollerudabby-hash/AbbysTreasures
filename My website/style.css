@@ -1,0 +1,149 @@
+/* ===== BASIC PAGE STYLE ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    margin: 20px;
+}
+
+/* ===== HEADER ===== */
+h1 {
+    color: #c45a8d;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8b3a62;
+    margin-right: 10px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #ffe0ec;
+}
+
+/* ===== SEARCH BOX ===== */
+.search-box {
+    margin: 15px 0;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #f2c6d8;
+    outline: none;
+}
+
+input:focus {
+    border-color: #c45a8d;
+    box-shadow: 0 0 0 2px rgba(196, 90, 141, 0.2);
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #f2c6d8;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #c45a8d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    min-height: 36px;
+    margin-top: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#cart {
+    background-color: #fff0f6;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ===== STICKY NAV ===== */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    background-color: #fff7fb;
+    padding: 10px 0;
+    z-index: 100;
+    text-align: center;
+}
+
+/* ===== BUBBLY CURSOR ===== */
+* {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32'><circle cx='16' cy='16' r='10' fill='%23c45a8d'/></svg>") 16 16, auto;
+}
+
+/* ===== MOBILE FRIENDLY ===== */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
+
+/* ===== SMOOTH SCROLL ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== REVIEW STYLING ===== */
+.rating {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #f5a623;
+    /* golden stars */
+}
+
+.review-input {
+    width: 100%;
+    padding: 6px 10px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    border: 1px solid #f2c6d8;
+}
+
+/* ===== SOLD OUT NOTE ===== */
+.sold-out-note {
+    color: #a33;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
